@@ -1,48 +1,60 @@
-.switch{
-    background: #343d5b;
-    border-radius: 1000px;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    outline: none;
-
+body {
+  width: 25px;
+  height: 30px;
+  background: none;
+  padding: 5px 5px;
+  display: block;
 }
 
-.switch::after{
-    content: "";
-    display:block;
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    background: #f1f1f1;
-    top: 0;
-    left: 0;
-    right: unset;
-    border-radius: 100px;
-    transition: .3s ease all;
-    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
-
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
 }
 
-.switch:active{
-    background: chocolate;
+.switch::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.logoLight{
-    width: 30px;
-    height: 30px;
-    background: none;
-    padding: 5px 5px;
-    display: block;
-  
+.switch.active {
+  background: #cfd21e;
 }
 
-
-.logoDark{
-    width: 30px;
-    height: 30px;
-    background: none; 
-    padding: 5px 5px;
-    display: block;
+.switch.active::after {
+  left: unset;
+  right: 0;
 }
+
+.switch .logoDark {
+  width: 25px;
+  height: 30px;
+  background: none;
+  padding: 3px 3px;
+  display: block;
+}
+
+.switch .logoLight {
+  width: 30px;
+  height: 30px;
+  background: none;
+  padding: 3px 3px;
+  display: block;
+}
+/*# sourceMappingURL=botonDarktheme.css.map */
