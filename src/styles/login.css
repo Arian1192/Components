@@ -1,0 +1,43 @@
+.Container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 5px solid #d9f0fa;
+    border-radius: 12px;
+    background-color: #1680ae;
+    box-shadow: 5px 10px 8px #888888;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+.ContainerChildren{
+    width: 50%;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.ContainerChildren2{
+    width: 50%;
+    height: 15%;
+    border: 1px solid red;
+    position: relative;
+    top: 80%;
+    left: 100px;
+}
+
+
+.Inputs{
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;  
+}
+
+.Boton{
+    position: absolute;
+    right: 100px;
+}
